@@ -3,7 +3,9 @@ body {
     padding: 0;
     color: #ffffff;
 }
-
+* {
+    box-sizing: border-box;
+}
 .wrapper {
     background: #61C4D9;
     min-width: 1100px;
@@ -18,29 +20,128 @@ body {
     color: #ffffff;
     
 }
+.header {
+    display: flex;   
+    align-items: center;
+}
 .item--menu {
     margin-right: 27px;
 }
 .item--menu:last-child {
-    margin-right: 0;
+    margin-right: 48px;
 }
 .menu__list {
     list-style-type: none;
-    display: flex;
+  display: flex;
+    justify-content: space-between;  
     
 }
 
 .contacts__phone {
+    font-family: Alegreya Sans;
     text-decoration: none;
     color: #ffffff;
+    font-size: 22px;
+    line-height: 18px;
+   
+
 }
-.menu {
+.menu {    
+    font-family: Alegreya Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+}
+.hero {
+    color: #ffffff;    
     display: flex;
-    align-items:center;
     justify-content: space-between;
+
+}
+.hero__title {
+    margin-top: 67px;
     font-family: Alegreya Sans;
 font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 30px;
+font-weight: bold;
+font-size: 48px;
+line-height: 58px;
+text-transform: uppercase;
+   
+}
+.hero__text {
+    font-family: Alegreya Sans;
+font-style: normal;
+font-weight:normal;
+font-size: 21px;
+line-height: 25px;
+margin-top: 20px;
+
+}  
+.hero__btn {
+    margin-top: 52px;
+}
+.hero__candy {
+    display: flex;
+    flex-direction: column;  
+}
+
+
+.btn {   
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 40px;
+    font-family: Alegreya Sans;
+    font-weight:bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #365A49;
+}   
+   
+
+
+.advantage {
+    display: flex;
+    justify-content: space-between;
+    font-family: Alegreya Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 78px;
+   
+}
+.advantage__quality {
+    display: flex;
+    align-items: center;
+    width: 166px;
+    height: 56px;
+}
+.advantage__delivery {
+    display: flex;
+    align-items: center;
+   height: 56px;
+    width: 166px;
+}
+.advantage__figure {
+    display: flex;
+    align-items: center;
+   height: 56px;
+    width: 166px;
+}
+.auto {
+    margin-right: 15px;
+}
+.list {
+    margin-right: 15px;
+}
+.fig {
+margin-right: 15px;
+}
+.loaf {
+ width: 504px;
+ height: 620px;
+}
+.hero__pic {
+    background: url(/img/узор\ 1.png);
 }
