@@ -6,10 +6,14 @@ body {
 * {
     box-sizing: border-box;
 }
-
+.wrapper {
+    
+}
 .welcome {
-    background: url(../img/comp.png) 84% 527% no-repeat,url(../img/узор\ 1.png)  86% 0%  no-repeat, #61C4D9;
-    height: 652px;   
+    background:  url(../img/comp.png) 84% 527% no-repeat, url(../img/узор\ 1.png)  86% 0%  no-repeat, #61C4D9;
+    height: 652px; 
+   
+
 }
 .container {
     width: 930px;
@@ -92,6 +96,7 @@ body {
     font-size: 20px;
     text-decoration: none;
     color: #365A49;
+    border: none;
 }   
 .advantage {
     display: flex;
@@ -245,4 +250,101 @@ margin-right: 15px;
 }
 .avatar__item {
     margin-right: 6px;
+}
+/* Доставка */
+.delivery {
+    color: #365A49;
+    background: #e8f1f7
+}
+.delivery__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    padding: 100px;
+    text-align: center;
+}
+.form {
+    display: flex;
+}
+
+.form__col {
+    flex: 1;
+    margin-right: 20px;
+}
+.form__col:last-child {
+        margin-right: 0;
+    }
+.form__row {
+     display: flex;
+     margin-bottom: 18px;
+    }
+.form__block {
+    flex: 1;
+    margin-right: 20px;
+}
+.form__block:last-child {
+        margin-right: 0;
+    }
+.form__input {
+    width: 100%;
+    border:none;
+    padding: 18px 11px;
+    /* border: solid 3px #dee2bd */
+    border: solid 3px transparent;
+}
+
+
+.form__input:focus {
+        border-color:#dee2bd;
+        outline: none;
+    }
+.form__input--textarea {
+height: 180px;
+resize: none;
+}
+.form__controls {
+    display: flex;
+    flex-wrap: wrap;
+}  
+.radio {
+    display: flex;
+    cursor: pointer;
+    user-select: none;}
+.radio--checkbox  .radio__visible  {
+         
+    border-radius: 0; 
+} 
+.radio__visible::before    {    
+   background: url("../img/check.png");
+            
+}   
+    
+
+.radio__elem {
+    display: none;
+     &:checked ~ .radio__visible {
+        &::before {
+        display: block;
+        }
+    }
+}
+.radio__visible {
+    width: 26px;
+    height: 26px;
+    position: relative;
+    border-radius: 50%;
+    background: #ffffff;
+
+}
+.radio__visible::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #365A49;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
